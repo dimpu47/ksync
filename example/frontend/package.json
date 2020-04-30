@@ -5,7 +5,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "bootstrap": "^4.0.0-beta",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.4",
     "moment": "^2.19.3",
     "node-sass-chokidar": "0.0.3",
@@ -16,7 +16,8 @@
     "react-flip-move": "^2.10.0",
     "react-scripts": "1.0.17",
     "react-timeago": "^3.4.3",
-    "reactstrap": "^5.0.0-alpha.4"
+    "reactstrap": "^5.0.0-alpha.4",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -26,7 +27,10 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "snyk": true
 }
