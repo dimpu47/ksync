@@ -16,7 +16,7 @@
     "react-flip-move": "^2.10.0",
     "react-scripts": "1.0.17",
     "react-timeago": "^3.4.3",
-    "reactstrap": "^5.0.0-alpha.4"
+    "reactstrap": "^5.0.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
